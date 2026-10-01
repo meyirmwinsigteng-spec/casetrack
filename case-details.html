@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case INV-2026-0184 | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html" class="active"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <section class="card case-header">
+        <div>
+          <p class="muted">CASE: INV-2026-0184</p>
+          <h1>Warehouse Equipment Theft</h1>
+          <div class="row" style="margin-top:8px">
+            <span class="badge b-danger">High</span>
+            <span class="badge b-warn">Under Investigation</span>
+          </div>
+        </div>
+        <dl class="details">
+          <dt>Assigned Officer</dt><dd>John Mensah</dd>
+          <dt>Location</dt><dd>Tema Industrial Area</dd>
+          <dt>Opened</dt><dd>14 September 2026</dd>
+          <dt>Last updated</dt><dd>20 September 2026</dd>
+        </dl>
+      </section>
+
+      <nav class="tabs" aria-label="Case sections">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#notes">Notes</a>
+        <a href="#persons">Persons</a>
+        <a href="#officers">Officers</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#files">Attachments</a>
+        <a href="#activity">Activity</a>
+      </nav>
+
+      <section id="overview" class="grid grid-2">
+        <article class="card"><h2>Incident Summary</h2><p>Electronic equipment worth GHS 85,000 was reported missing from Warehouse B overnight.</p></article>
+        <article class="card"><h2>Investigation Objective</h2><p>Identify how access was gained, who was involved, and recover the equipment.</p></article>
+        <article class="card"><h2>Current Findings</h2><p>CCTV shows a suspicious vehicle at the entrance between 02:15 and 02:27.</p></article>
+        <article class="card"><h2>Responsible Team</h2><p>Property Crime Unit, Tema Division</p></article>
+      </section>
+
+      <section id="evidence" class="card">
+        <h2>Evidence</h2>
+        <div class="table-wrap">
+          <table class="stack">
+            <thead><tr><th>ID</th><th>Name</th><th>Type</th><th>Collected</th><th>By</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td data-label="ID">EVD-001</td><td data-label="Name">CCTV Footage</td><td data-label="Type">Video</td><td data-label="Collected">14 Sep 2026</td><td data-label="By">J. Mensah</td><td data-label="Status"><span class="badge b-ok">Verified</span></td></tr>
+              <tr><td data-label="ID">EVD-002</td><td data-label="Name">Tyre Print Photo</td><td data-label="Type">Photo</td><td data-label="Collected">15 Sep 2026</td><td data-label="By">E. Boateng</td><td data-label="Status"><span class="badge b-warn">Pending</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="grid split">
+        <section id="timeline" class="card">
+          <h2>Investigation Timeline</h2>
+          <div class="timeline">
+            <div class="tl-item"><b>Incident reported</b><div class="muted">14 Sep 2026 · 07:30 · Officer: A. Owusu</div><p>Warehouse manager reported the theft.</p></div>
+            <div class="tl-item"><b>Case created</b><div class="muted">14 Sep 2026 · 09:00 · Officer: A. Owusu</div><p>Case opened and assigned to J. Mensah.</p></div>
+            <div class="tl-item"><b>CCTV footage collected</b><div class="muted">15 Sep 2026 · 10:00 · Officer: J. Mensah</div><p>Footage secured from entrance camera.</p></div>
+            <div class="tl-item"><b>Witness interviewed</b><div class="muted">16 Sep 2026 · 14:00 · Officer: J. Mensah</div><p>Night guard statement recorded.</p></div>
+            <div class="tl-item"><b>Vehicle identified</b><div class="muted">18 Sep 2026 · 11:30 · Officer: K. Asante</div><p>Vehicle type matched from footage.</p></div>
+          </div>
+        </section>
+
+        <aside>
+          <section id="notes" class="card">
+            <h2>Case Notes</h2>
+            <div class="note">
+              <b>John Mensah</b> <span class="badge b-info">Investigation Update</span>
+              <div class="muted">16 Sep 2026 · 15:10</div>
+              <p>Reviewed CCTV from the entrance. A suspicious vehicle appears between 02:15 and 02:27.</p>
+            </div>
+            <div class="note">
+              <b>Esi Boateng</b> <span class="badge b-info">Evidence Review</span>
+              <div class="muted">17 Sep 2026 · 09:40</div>
+              <p>Tyre print photo logged. Awaiting verification.</p>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <section id="officers" class="grid grid-3">
+        <article class="card row"><span class="avatar">JM</span><div><b>John Mensah</b><div class="muted">Lead Investigator · Property Crime</div><div class="muted">j.mensah@example.com</div></div></article>
+        <article class="card row"><span class="avatar">EB</span><div><b>Esi Boateng</b><div class="muted">Evidence Officer</div><div class="muted">e.boateng@example.com</div></div></article>
+        <article class="card row"><span class="avatar">AO</span><div><b>Ama Owusu</b><div class="muted">Supervisor</div><div class="muted">a.owusu@example.com</div></div></article>
+      </section>
+
+      <section id="persons" class="card">
+        <h2>Persons of Interest</h2>
+        <div class="state"><div class="big">👥</div><h3>No related persons found.</h3><p>Add witnesses or suspects to this case.</p></div>
+      </section>
+
+      <section id="tasks" class="card">
+        <h2>Tasks</h2>
+        <div class="table-wrap">
+          <table class="stack">
+            <thead><tr><th>Task</th><th>Officer</th><th>Due</th><th>Priority</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Task">Interview witness</td><td data-label="Officer">J. Mensah</td><td data-label="Due">22 Sep 2026</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-warn">In Progress</span></td></tr>
+              <tr><td data-label="Task">Collect vehicle records</td><td data-label="Officer">K. Asante</td><td data-label="Due">19 Sep 2026</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge b-danger">Overdue</span></td></tr>
+              <tr><td data-label="Task">Review CCTV footage</td><td data-label="Officer">J. Mensah</td><td data-label="Due">16 Sep 2026</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-ok">Completed</span></td></tr>
+              <tr><td data-label="Task">Prepare investigation report</td><td data-label="Officer">J. Mensah</td><td data-label="Due">30 Sep 2026</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge">Not Started</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="files" class="card">
+        <h2>Attachments</h2>
+        <ul class="list">
+          <li class="row between">
+            <div><b>incident-report.pdf</b><div class="muted">PDF · 2.4 MB · Uploaded by J. Mensah · 16 Sep 2026</div></div>
+            <div class="row"><button class="icon-btn" aria-label="Preview incident-report.pdf">👁</button><button class="icon-btn" aria-label="Download incident-report.pdf">⬇</button></div>
+          </li>
+          <li class="row between">
+            <div><b>entrance-cctv.mp4</b><div class="muted">MP4 · 48 MB · Uploaded by J. Mensah · 15 Sep 2026</div></div>
+            <div class="row"><button class="icon-btn" aria-label="Preview entrance-cctv.mp4">👁</button><button class="icon-btn" aria-label="Download entrance-cctv.mp4">⬇</button></div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="activity" class="card">
+        <h2>Activity</h2>
+        <ul class="list">
+          <li><b>John Mensah</b> uploaded evidence EVD-019<div class="muted">Today, 10:20 AM · EVD-019</div></li>
+          <li><b>Ama Owusu</b> changed case status from Open to Investigating<div class="muted">Today, 09:42 AM · INV-2026-0184</div></li>
+          <li><b>Supervisor</b> approved evidence EVD-015<div class="muted">Yesterday · EVD-015</div></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

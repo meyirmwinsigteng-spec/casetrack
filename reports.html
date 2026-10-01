@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reports | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html" class="active"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <div class="page-head"><div><h1>Reports</h1><p>Case statistics</p></div></div>
+
+      <section class="grid grid-2">
+        <article class="card">
+          <h2>Cases by Status</h2>
+          <div class="bar"><span>Open</span><i style="width:60%"></i><b>62</b></div>
+          <div class="bar"><span>Investigating</span><i style="width:40%"></i><b>41</b></div>
+          <div class="bar"><span>Pending Review</span><i style="width:20%"></i><b>18</b></div>
+          <div class="bar"><span>Closed</span><i style="width:95%"></i><b>98</b></div>
+        </article>
+        <article class="card">
+          <h2>Cases by Priority</h2>
+          <div class="bar"><span>Low</span><i style="width:30%"></i><b>30</b></div>
+          <div class="bar"><span>Medium</span><i style="width:70%"></i><b>72</b></div>
+          <div class="bar"><span>High</span><i style="width:45%"></i><b>65</b></div>
+          <div class="bar"><span>Critical</span><i style="width:10%"></i><b>17</b></div>
+        </article>
+        <article class="card">
+          <h2>Cases by Category</h2>
+          <div class="bar"><span>Property</span><i style="width:80%"></i><b>64</b></div>
+          <div class="bar"><span>Fraud</span><i style="width:45%"></i><b>36</b></div>
+          <div class="bar"><span>Cyber</span><i style="width:25%"></i><b>20</b></div>
+          <div class="bar"><span>Traffic</span><i style="width:35%"></i><b>28</b></div>
+        </article>
+        <article class="card">
+          <h2>Cases by Month</h2>
+          <div class="bar"><span>June</span><i style="width:50%"></i><b>28</b></div>
+          <div class="bar"><span>July</span><i style="width:65%"></i><b>36</b></div>
+          <div class="bar"><span>August</span><i style="width:75%"></i><b>42</b></div>
+          <div class="bar"><span>September</span><i style="width:60%"></i><b>33</b></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

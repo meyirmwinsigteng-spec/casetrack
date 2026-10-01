@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cases | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html" class="active"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <div><h1>Cases</h1><p>All investigation cases</p></div>
+        <a href="cases.html" class="btn btn-primary">View Cases</a>
+      </div>
+
+      <section class="card">
+        <form class="filters" style="margin-bottom:16px" role="search">
+          <label class="sr-only" for="s">Search cases</label>
+          <input id="s" type="search" placeholder="Search cases">
+          <label class="sr-only" for="st">Status</label>
+          <select id="st"><option>All Cases</option><option>Open</option><option>Under Investigation</option><option>Pending Review</option><option>Closed</option><option>Archived</option></select>
+          <label class="sr-only" for="pr">Priority</label>
+          <select id="pr"><option>All priorities</option><option>Low</option><option>Medium</option><option>High</option><option>Critical</option></select>
+          <label class="sr-only" for="dt">Date</label>
+          <input id="dt" type="date">
+          <label class="sr-only" for="so">Sort</label>
+          <select id="so"><option>Newest first</option><option>Oldest first</option><option>Priority</option></select>
+        </form>
+
+        <div class="table-wrap">
+          <table class="stack">
+            <thead>
+              <tr><th>Case ID</th><th>Title</th><th>Category</th><th>Opened</th><th>Officer</th><th>Priority</th><th>Status</th><th>Location</th><th>Updated</th></tr>
+            </thead>
+            <tbody>
+              <tr><td data-label="Case ID"><a href="case-details.html">INV-2026-0184</a></td><td data-label="Title">Warehouse Equipment Theft</td><td data-label="Category">Property Crime</td><td data-label="Opened">14 Sep 2026</td><td data-label="Officer">John Mensah</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-warn">Investigating</span></td><td data-label="Location">Tema Industrial Area</td><td data-label="Updated">20 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0183</td><td data-label="Title">Vehicle Incident</td><td data-label="Category">Traffic</td><td data-label="Opened">12 Sep 2026</td><td data-label="Officer">Ama Owusu</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge b-info">Pending Review</span></td><td data-label="Location">Accra Central</td><td data-label="Updated">18 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0182</td><td data-label="Title">Missing Asset</td><td data-label="Category">Asset Loss</td><td data-label="Opened">10 Sep 2026</td><td data-label="Officer">Kofi Asante</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-warn">Investigating</span></td><td data-label="Location">Kumasi Depot</td><td data-label="Updated">19 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0181</td><td data-label="Title">Data Breach Report</td><td data-label="Category">Cyber</td><td data-label="Opened">08 Sep 2026</td><td data-label="Officer">Esi Boateng</td><td data-label="Priority"><span class="badge b-danger">Critical</span></td><td data-label="Status"><span class="badge b-danger">Escalated</span></td><td data-label="Location">HQ Server Room</td><td data-label="Updated">21 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0180</td><td data-label="Title">Office Break-in</td><td data-label="Category">Property Crime</td><td data-label="Opened">02 Sep 2026</td><td data-label="Officer">Yaw Darko</td><td data-label="Priority"><span class="badge">Low</span></td><td data-label="Status"><span class="badge b-ok">Closed</span></td><td data-label="Location">Takoradi</td><td data-label="Updated">15 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0179</td><td data-label="Title">Fuel Pilferage</td><td data-label="Category">Fraud</td><td data-label="Opened">28 Aug 2026</td><td data-label="Officer">John Mensah</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge">Archived</span></td><td data-label="Location">Tema Port</td><td data-label="Updated">10 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0178</td><td data-label="Title">Forged Delivery Notes</td><td data-label="Category">Fraud</td><td data-label="Opened">25 Aug 2026</td><td data-label="Officer">Ama Owusu</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge b-warn">Investigating</span></td><td data-label="Location">Kaneshie</td><td data-label="Updated">12 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0177</td><td data-label="Title">Workplace Injury</td><td data-label="Category">Safety</td><td data-label="Opened">20 Aug 2026</td><td data-label="Officer">Kofi Asante</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge b-ok">Closed</span></td><td data-label="Location">Tarkwa Mine Site</td><td data-label="Updated">05 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0176</td><td data-label="Title">Unauthorized Site Access</td><td data-label="Category">Security</td><td data-label="Opened">17 Aug 2026</td><td data-label="Officer">Yaw Darko</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-info">Pending Review</span></td><td data-label="Location">Takoradi Port</td><td data-label="Updated">14 Sep 2026</td></tr>
+              <tr><td data-label="Case ID">INV-2026-0175</td><td data-label="Title">Stolen Company Laptop</td><td data-label="Category">Property Crime</td><td data-label="Opened">11 Aug 2026</td><td data-label="Officer">Esi Boateng</td><td data-label="Priority"><span class="badge">Low</span></td><td data-label="Status"><span class="badge">Archived</span></td><td data-label="Location">Osu, Accra</td><td data-label="Updated">01 Sep 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

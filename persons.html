@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Persons | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html" class="active"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar"><a href="index.html">Dashboard</a></header>
+    <main>
+      <div class="page-head"><div><h1>Persons</h1><p>People associated with investigation cases</p></div></div>
+      <section class="card">
+        <h2>Investigation team</h2>
+        <div class="table-wrap">
+          <table class="stack">
+            <thead><tr><th>Name</th><th>Role</th><th>Case</th><th>Contact</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Name">John Mensah</td><td data-label="Role">Lead Investigator</td><td data-label="Case"><a href="case-details.html">INV-2026-0184</a></td><td data-label="Contact">j.mensah@example.com</td></tr>
+              <tr><td data-label="Name">Esi Boateng</td><td data-label="Role">Evidence Officer</td><td data-label="Case"><a href="case-details.html">INV-2026-0184</a></td><td data-label="Contact">e.boateng@example.com</td></tr>
+              <tr><td data-label="Name">Ama Owusu</td><td data-label="Role">Supervisor</td><td data-label="Case"><a href="case-details.html">INV-2026-0184</a></td><td data-label="Contact">a.owusu@example.com</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card"><h2>Persons of interest</h2><p class="muted">No related persons have been added. <a href="case-details.html#persons">Open the case record</a> to review this section.</p></section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

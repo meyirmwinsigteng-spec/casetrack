@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Settings | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html" class="active"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar"><a href="index.html">Dashboard</a></header>
+    <main>
+      <div class="page-head"><div><h1>Settings</h1><p>Local profile preferences for this browser</p></div></div>
+      <section class="card">
+        <form id="settings-form" class="settings-form">
+          <div class="field"><label for="display-name">Display name</label><input id="display-name" name="displayName" value="Ama Owusu" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" value="a.owusu@example.com" required></div>
+          <label class="row"><input id="notifications" name="notifications" type="checkbox" checked> Receive notification reminders</label>
+          <button class="btn btn-primary" type="submit">Save settings</button>
+          <p id="settings-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+</div>
+<script>
+const settingsForm = document.querySelector('#settings-form');
+const savedSettings = JSON.parse(localStorage.getItem('casetrack-settings') || '{}');
+if (savedSettings.displayName) settingsForm.elements.displayName.value = savedSettings.displayName;
+if (savedSettings.email) settingsForm.elements.email.value = savedSettings.email;
+if (typeof savedSettings.notifications === 'boolean') settingsForm.elements.notifications.checked = savedSettings.notifications;
+settingsForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  localStorage.setItem('casetrack-settings', JSON.stringify({
+    displayName: settingsForm.elements.displayName.value,
+    email: settingsForm.elements.email.value,
+    notifications: settingsForm.elements.notifications.checked
+  }));
+  document.querySelector('#settings-status').textContent = 'Settings saved in this browser.';
+});
+</script>
+</body>
+</html>

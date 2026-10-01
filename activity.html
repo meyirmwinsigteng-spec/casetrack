@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Activity Log | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html" class="active"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <div class="page-head"><div><h1>Activity Log</h1><p>Audit trail</p></div></div>
+
+      <section class="card">
+        <div class="table-wrap">
+          <table class="stack">
+            <thead><tr><th>Time</th><th>User</th><th>Activity</th><th>Related Item</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Time">Today, 10:20 AM</td><td data-label="User">John Mensah</td><td data-label="Activity">Uploaded evidence</td><td data-label="Related Item">EVD-019</td></tr>
+              <tr><td data-label="Time">Today, 09:42 AM</td><td data-label="User">Ama Owusu</td><td data-label="Activity">Changed status from Open to Investigating</td><td data-label="Related Item">INV-2026-0184</td></tr>
+              <tr><td data-label="Time">Yesterday, 04:15 PM</td><td data-label="User">Supervisor</td><td data-label="Activity">Approved evidence</td><td data-label="Related Item">EVD-015</td></tr>
+              <tr><td data-label="Time">Yesterday, 11:05 AM</td><td data-label="User">Esi Boateng</td><td data-label="Activity">Added case note</td><td data-label="Related Item">INV-2026-0181</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="state"><div class="big">🕒</div><h3>No activity recorded.</h3><p>Actions on this case will show up here.</p></div>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

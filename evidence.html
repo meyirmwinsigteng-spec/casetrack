@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evidence | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html" class="active"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <div><h1>Evidence</h1><p>Gallery of collected items</p></div>
+        <a href="evidence.html" class="btn btn-primary">Evidence Gallery</a>
+      </div>
+
+      <section class="grid grid-4" aria-label="Evidence gallery">
+        <article class="card"><div class="thumb">🎥</div><b>CCTV Footage</b><div class="muted">EVD-001 · Video · Uploaded 15 Sep</div><span class="badge b-ok">Verified</span></article>
+        <article class="card"><div class="thumb">📷</div><b>CCTV Image</b><div class="muted">EVD-008 · Image · Uploaded 15 Sep</div><span class="badge b-ok">Verified</span></article>
+        <article class="card"><div class="thumb">📄</div><b>Guard Statement</b><div class="muted">EVD-011 · Document · Uploaded 16 Sep</div><span class="badge b-warn">Pending</span></article>
+        <article class="card"><div class="thumb">🎧</div><b>Phone Call Audio</b><div class="muted">EVD-015 · Audio · Uploaded 18 Sep</div><span class="badge b-info">In Review</span></article>
+      </section>
+
+      <section class="card">
+        <h2>Evidence Detail</h2>
+        <dl class="details">
+          <dt>Evidence ID</dt><dd>EVD-001</dd>
+          <dt>Name</dt><dd>CCTV Footage</dd>
+          <dt>Type</dt><dd>Video</dd>
+          <dt>Collected</dt><dd>14 Sep 2026 by J. Mensah</dd>
+          <dt>Location</dt><dd>Warehouse B entrance</dd>
+          <dt>Status</dt><dd><span class="badge b-ok">Verified</span></dd>
+        </dl>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

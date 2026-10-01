@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard | CaseTrack</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">🛡 <span>CaseTrack</span></div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="active"><span class="ico">▦</span><span class="lbl">Dashboard</span></a>
+      <a href="cases.html"><span class="ico">📁</span><span class="lbl">Cases</span></a>
+      <a href="incident.html"><span class="ico">⚠</span><span class="lbl">Incidents</span></a>
+      <a href="evidence.html"><span class="ico">🔍</span><span class="lbl">Evidence</span></a>
+      <a href="persons.html"><span class="ico">👤</span><span class="lbl">Persons</span></a>
+      <a href="tasks.html"><span class="ico">✔</span><span class="lbl">Tasks</span></a>
+      <a href="activity.html"><span class="ico">🕒</span><span class="lbl">Activity</span></a>
+      <a href="reports.html"><span class="ico">📊</span><span class="lbl">Reports</span></a>
+      <a href="archive.html"><span class="ico">🗄</span><span class="lbl">Archive</span></a>
+      <a href="settings.html"><span class="ico">⚙</span><span class="lbl">Settings</span></a>
+    </nav>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <label for="nav-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search case ID, evidence, officer, location…">
+      </form>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <div class="user"><span class="avatar">AO</span><span class="lbl">Ama Owusu</span></div>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <div><h1>Dashboard</h1><p>Overview of all investigation activity</p></div>
+        <a href="cases.html" class="btn btn-primary">+ New Case</a>
+      </div>
+
+      <section class="grid grid-4" aria-label="Statistics">
+        <article class="card stat"><div class="num">184</div><div class="lbl">Total Cases</div></article>
+        <article class="card stat"><div class="num">62</div><div class="lbl">Open Cases</div></article>
+        <article class="card stat warn"><div class="num">41</div><div class="lbl">Under Investigation</div></article>
+        <article class="card stat danger"><div class="num">17</div><div class="lbl">High Priority</div></article>
+        <article class="card stat ok"><div class="num">98</div><div class="lbl">Closed Cases</div></article>
+        <article class="card stat"><div class="num">9</div><div class="lbl">New Incidents</div></article>
+        <article class="card stat"><div class="num">536</div><div class="lbl">Evidence Items</div></article>
+        <article class="card stat warn"><div class="num">23</div><div class="lbl">Pending Tasks</div></article>
+      </section>
+
+      <div class="grid split">
+        <section class="card">
+          <h2>Recently Opened Cases</h2>
+          <div class="table-wrap">
+            <table class="stack">
+              <thead><tr><th>Case ID</th><th>Title</th><th>Priority</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Case ID"><a href="case-details.html">INV-2026-0184</a></td><td data-label="Title">Warehouse Equipment Theft</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-warn">Investigating</span></td></tr>
+                <tr><td data-label="Case ID">INV-2026-0183</td><td data-label="Title">Vehicle Incident</td><td data-label="Priority"><span class="badge b-warn">Medium</span></td><td data-label="Status"><span class="badge b-info">Pending Review</span></td></tr>
+                <tr><td data-label="Case ID">INV-2026-0182</td><td data-label="Title">Missing Asset</td><td data-label="Priority"><span class="badge b-danger">High</span></td><td data-label="Status"><span class="badge b-warn">Investigating</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Case Status Summary</h2>
+          <div class="bar"><span>Open</span><i style="width:60%"></i><b>62</b></div>
+          <div class="bar"><span>Investigating</span><i style="width:40%"></i><b>41</b></div>
+          <div class="bar"><span>Pending</span><i style="width:20%"></i><b>18</b></div>
+          <div class="bar"><span>Closed</span><i style="width:95%"></i><b>98</b></div>
+        </aside>
+      </div>
+
+      <div class="grid grid-3">
+        <section class="card">
+          <h2>Recent Activity</h2>
+          <ul class="list">
+            <li><b>John Mensah</b> uploaded evidence EVD-019<div class="muted">10:20 AM</div></li>
+            <li><b>Ama Owusu</b> changed status to Investigating<div class="muted">09:42 AM</div></li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Pending Tasks</h2>
+          <ul class="list">
+            <li>Interview witness <span class="badge b-warn">In Progress</span></li>
+            <li>Collect vehicle records <span class="badge b-danger">Overdue</span></li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Recent Evidence</h2>
+          <div class="state"><div class="big">📂</div><h3>No evidence has been added yet.</h3><p>New uploads will appear here.</p></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
